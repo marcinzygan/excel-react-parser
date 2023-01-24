@@ -17,8 +17,6 @@ function App() {
         const worksheet = workbook.Sheets[sheetName];
         const json = xlsx.utils.sheet_to_json(worksheet);
         console.log(json);
-        setExcelData(json);
-        console.log(excelData);
       };
       reader.readAsArrayBuffer(e.target.files[0]);
     }
